@@ -2,7 +2,7 @@ TaskFlow — Task Management Dashboard
 
 A modern task management dashboard built with React and TypeScript.
 
-🔗 Live Demo: dashboard-app-ochre-eta.vercel.app
+🔗 Live Demo: https://dashboard-app-ochre-eta.vercel.app/dashboards
 
 ## Screenshots
 
