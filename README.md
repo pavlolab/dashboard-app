@@ -1,94 +1,65 @@
-# TaskFlow — Task Management Dashboard
+TaskFlow — Task Management Dashboard
 
-A modern task management dashboard built with React, TypeScript, and Tailwind CSS. Features include task tracking, project overview, calendar view, and analytics.
+A modern task management dashboard built with React and TypeScript.
 
-🔗 **Live Demo:** [link will be added after deploy]
+🔗 Live Demo: dashboard-app-ochre-eta.vercel.app
 
-![Dashboard Preview](./screenshots/dashboard.png)
+## Screenshots
 
----
+![1](./screenshots/1.png)
+![2](./screenshots/2.png)
+![3](./screenshots/3.png)
+![4](./screenshots/4.png)
+![5](./screenshots/5.png)
+![6](./screenshots/6.png)
+![7](./screenshots/7.png)
+![8](./screenshots/8.png)
+![9](./screenshots/9.png)
+![10](./screenshots/10.png)
 
-## Features
+Features
 
-- 📊 **Dashboard** — overview stats, task trends chart, upcoming deadlines, project status
-- ✅ **Tasks** — filter by status/priority, search, create and delete tasks
-- 📁 **Projects** — project cards with task progress
-- 📅 **Calendar** — monthly view with task deadlines, click to view details
-- ⚙️ **Settings** — profile, theme (dark mode)
-- 🔐 **Authentication** — login/logout flow with protected routes
-- ⌨️ **Keyboard shortcuts** — `Ctrl+B` toggle sidebar, `Ctrl+M` quick new task
-- 📱 **Responsive** — works on mobile and desktop
+Dashboard — statistics, task trends chart, upcoming deadlines, project status
+Tasks — table view with filters by status and priority, search, create, edit and delete tasks
+Board — Kanban board with drag & drop between columns
+Projects — project cards with task progress bars
+Calendar — monthly view with task deadlines, click to view task details
+Settings — profile and appearance settings
+Authentication — login/logout with protected routes
+Keyboard shortcuts — Ctrl+B toggle sidebar, Ctrl+M open new task
+Notifications — toast messages for all actions
+Responsive — works on mobile and desktop
 
----
+Tech Stack
 
-## Tech Stack
+React 19 + TypeScript
+Vite — build tool
+Tailwind CSS — styling
+Zustand — state management
+React Router — routing
+Supabase — database and API
+Recharts — charts
+date-fns — date utilities
+@dnd-kit — drag and drop
+react-icons — icons
 
-- **React 19** + **TypeScript**
-- **Vite** — build tool
-- **Tailwind CSS** — styling
-- **Zustand** — state management
-- **React Router** — routing
-- **Recharts** — charts and graphs
-- **date-fns** — date utilities
-- **react-icons** — icon set
+Getting Started
 
----
-
-## Getting Started
-
-### Prerequisites
-- Node.js 18+
-- npm
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/pavlolab/taskflow.git
-cd taskflow
-
-# Install dependencies
+bashgit clone https://github.com/pavlolab/dashboard-app.git
+cd dashboard-app
 npm install
-
-# Run development server
 npm run dev
-```
 
-The app will be available at `http://localhost:5173`
+Create .env file in the root:
 
-### Demo Login
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-This project uses mock authentication. You can sign in with:
-- **Email:** any valid email format (e.g. `demo@example.com`)
-- **Password:** any password with 4+ characters
+Demo Login
 
----
+Email: any valid email
+Password: any password with 4+ characters
 
-## Project Structure
+Author
 
-```
-src/
-├── components/      # Reusable UI components (Header, Sidebar, Modals)
-├── pages/            # Page components (Dashboard, Tasks, Projects, etc.)
-├── store/            # Zustand stores (task state, UI state)
-├── types/            # TypeScript type definitions
-└── App.tsx           # Routes and app shell
-```
-
----
-
-## Roadmap
-
-- [ ] Connect to Supabase for persistent data storage
-- [ ] Task editing
-- [ ] Drag & drop task board (Kanban view)
-- [ ] Toast notifications
-- [ ] Full i18n support (English / Ukrainian)
-
----
-
-## Author
-
-**Pavlo** — [GitHub](https://github.com/pavlolab)
-
-Built as a learning project to practice React, TypeScript, and modern frontend tooling.
+Pavlo — GitHub
